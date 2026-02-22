@@ -1,0 +1,3 @@
+ServerName=localhost
+Port=8080
+Database=MyDB
