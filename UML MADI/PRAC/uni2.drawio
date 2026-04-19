@@ -1,0 +1,37 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Banking Components" id="0">
+    <mxGraphModel dx="1030" dy="562" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="frontend" parent="1" value="Frontend" vertex="1">
+          <mxGeometry height="60" width="120" x="50" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="backend" parent="1" value="Backend" vertex="1">
+          <mxGeometry height="60" width="120" x="250" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="db" parent="1" value="Database" vertex="1">
+          <mxGeometry height="60" width="120" x="450" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="auth" parent="1" value="Auth Service" vertex="1">
+          <mxGeometry height="60" width="120" x="450" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="pay" parent="1" value="Payment Gateway" vertex="1">
+          <mxGeometry height="60" width="150" x="650" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="l1" edge="1" parent="1" source="frontend" target="backend">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l2" edge="1" parent="1" source="backend" target="db">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l3" edge="1" parent="1" source="backend" target="auth">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l4" edge="1" parent="1" source="backend" target="pay">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

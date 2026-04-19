@@ -1,0 +1,41 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Logistics Components" id="0">
+    <mxGraphModel dx="47064" dy="26437" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="frontend" parent="1" value="Frontend (Web/Mobile)" vertex="1">
+          <mxGeometry height="70" width="160" x="50" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="backend" parent="1" value="Backend" vertex="1">
+          <mxGeometry height="70" width="160" x="300" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="db" parent="1" value="Database" vertex="1">
+          <mxGeometry height="70" width="160" x="550" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="route" parent="1" value="Route Optimization" vertex="1">
+          <mxGeometry height="70" width="180" x="550" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="warehouse" parent="1" value="Warehouse Module" vertex="1">
+          <mxGeometry height="70" width="180" x="550" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="courier" parent="1" value="Courier API Integration" vertex="1">
+          <mxGeometry height="70" width="200" x="800" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="notify" parent="1" value="Notification Service" vertex="1">
+          <mxGeometry height="70" width="180" x="300" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="analytics" parent="1" value="Analytics" vertex="1">
+          <mxGeometry height="70" width="180" x="300" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="PCUa3R5IqZ-Uo1bmZZ3U-1" edge="1" parent="1" source="frontend" target="backend" />
+        <mxCell id="PCUa3R5IqZ-Uo1bmZZ3U-2" edge="1" parent="1" source="backend" target="db" />
+        <mxCell id="PCUa3R5IqZ-Uo1bmZZ3U-3" edge="1" parent="1" source="backend" target="route" />
+        <mxCell id="PCUa3R5IqZ-Uo1bmZZ3U-4" edge="1" parent="1" source="backend" target="warehouse" />
+        <mxCell id="PCUa3R5IqZ-Uo1bmZZ3U-5" edge="1" parent="1" source="backend" target="notify" />
+        <mxCell id="PCUa3R5IqZ-Uo1bmZZ3U-6" edge="1" parent="1" source="backend" target="analytics" />
+        <mxCell id="PCUa3R5IqZ-Uo1bmZZ3U-7" edge="1" parent="1" source="backend" target="courier" />
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

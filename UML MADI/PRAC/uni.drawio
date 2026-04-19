@@ -1,0 +1,49 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="University UML" id="0">
+    <mxGraphModel dx="1373" dy="749" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="uni" parent="1" style="shape=rectangle;whiteSpace=wrap;" value="Университет ----------------- название адрес ----------------- +добавитьФакультет() +удалитьФакультет()" vertex="1">
+          <mxGeometry height="120" width="180" x="50" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="fac" parent="1" style="shape=rectangle;" value="Факультет ----------------- название ----------------- +добавитьКафедру()" vertex="1">
+          <mxGeometry height="120" width="180" x="300" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="dep" parent="1" style="shape=rectangle;" value="Кафедра ----------------- название ----------------- +добавитьПреподавателя()" vertex="1">
+          <mxGeometry height="120" width="180" x="550" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="user" parent="1" style="shape=rectangle;" value="Пользователь ----------------- id имя email ----------------- +войти()" vertex="1">
+          <mxGeometry height="140" width="180" x="300" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="student" parent="1" style="shape=rectangle;" value="Студент номерЗачетки +регистрация()" vertex="1">
+          <mxGeometry height="100" width="180" x="100" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="teacher" parent="1" style="shape=rectangle;" value="Преподаватель должность +выставитьОценку()" vertex="1">
+          <mxGeometry height="100" width="180" x="350" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="course" parent="1" style="shape=rectangle;" value="Курс название +добавитьСтудента()" vertex="1">
+          <mxGeometry height="120" width="180" x="600" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="uni" style="endArrow=block;" target="fac">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="fac" style="endArrow=block;" target="dep">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="user" style="endArrow=open;" target="student">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="user" style="endArrow=open;" target="teacher">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="dep" style="endArrow=block;" target="course">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="course" style="endArrow=block;" target="student">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

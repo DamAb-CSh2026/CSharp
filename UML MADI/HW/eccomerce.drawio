@@ -1,0 +1,57 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Ecommerce UML" id="0">
+    <mxGraphModel dx="49545" dy="27606" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="user" parent="1" style="shape=rectangle;" value="Пользователь (abstract) ----------------- id имя email адрес телефон роль ----------------- +зарегистрироваться() +войти() +обновитьДанные()" vertex="1">
+          <mxGeometry height="180" width="220" x="400" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="client" parent="1" style="shape=rectangle;" value="Клиент ----------------- баллыЛояльности ----------------- +оформитьЗаказ()" vertex="1">
+          <mxGeometry height="140" width="200" x="200" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="admin" parent="1" style="shape=rectangle;" value="Администратор ----------------- ----------------- +управлятьТоварами() +логировать()" vertex="1">
+          <mxGeometry height="140" width="200" x="600" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="product" parent="1" style="shape=rectangle;" value="Товар ----------------- id название цена количество ----------------- +создать() +обновить()" vertex="1">
+          <mxGeometry height="160" width="200" x="100" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="category" parent="1" style="shape=rectangle;" value="Категория ----------------- название" vertex="1">
+          <mxGeometry height="100" width="200" x="100" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="order" parent="1" style="shape=rectangle;" value="Заказ ----------------- id дата статус сумма ----------------- +оформить() +отменить() +оплатить()" vertex="1">
+          <mxGeometry height="180" width="220" x="450" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="payment" parent="1" style="shape=rectangle;" value="Платеж (abstract) ----------------- id сумма статус ----------------- +обработать() +вернуть()" vertex="1">
+          <mxGeometry height="160" width="220" x="750" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="delivery" parent="1" style="shape=rectangle;" value="Доставка ----------------- адрес статус ----------------- +отправить() +отследить()" vertex="1">
+          <mxGeometry height="140" width="220" x="750" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="warehouse" parent="1" style="shape=rectangle;" value="Склад ----------------- название адрес ----------------- +учетТоваров()" vertex="1">
+          <mxGeometry height="140" width="200" x="50" y="900" as="geometry" />
+        </mxCell>
+        <mxCell id="promo" parent="1" style="shape=rectangle;" value="Промокод ----------------- код скидка ----------------- +применить()" vertex="1">
+          <mxGeometry height="140" width="200" x="350" y="900" as="geometry" />
+        </mxCell>
+        <mxCell id="review" parent="1" style="shape=rectangle;" value="Отзыв ----------------- рейтинг текст" vertex="1">
+          <mxGeometry height="140" width="200" x="600" y="900" as="geometry" />
+        </mxCell>
+        <mxCell id="2" edge="1" parent="1" source="user" style="endArrow=block;endFill=0;" target="client">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3" edge="1" parent="1" source="user" style="endArrow=block;endFill=0;" target="admin">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4" edge="1" parent="1" source="client" target="order" />
+        <mxCell id="5" edge="1" parent="1" source="order" target="product" />
+        <mxCell id="6" edge="1" parent="1" source="product" target="category" />
+        <mxCell id="7" edge="1" parent="1" source="order" target="payment" />
+        <mxCell id="8" edge="1" parent="1" source="order" target="delivery" />
+        <mxCell id="9" edge="1" parent="1" source="warehouse" target="product" />
+        <mxCell id="10" edge="1" parent="1" source="order" target="promo" />
+        <mxCell id="11" edge="1" parent="1" source="product" target="review" />
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
