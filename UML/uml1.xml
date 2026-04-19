@@ -1,0 +1,67 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Ecommerce UML" id="0">
+    <mxGraphModel dx="1471" dy="804" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="user" parent="1" style="shape=rectangle" value="&lt;&lt;abstract&gt;&gt; User&#xa;----------------&#xa;Id&#xa;Name&#xa;Email&#xa;----------------&#xa;Login()&#xa;UpdateData()" vertex="1">
+          <mxGeometry height="140" width="200" x="100" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="customer" parent="1" style="shape=rectangle" value="Customer&#xa;----------------&#xa;Orders&#xa;LoyaltyPoints&#xa;----------------&#xa;AddPoints()" vertex="1">
+          <mxGeometry height="140" width="200" x="50" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="admin" parent="1" style="shape=rectangle" value="Admin&#xa;----------------&#xa;----------------&#xa;LogAction()" vertex="1">
+          <mxGeometry height="120" width="200" x="300" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="product" parent="1" style="shape=rectangle" value="Product&#xa;----------------&#xa;Id&#xa;Name&#xa;Price&#xa;Stock&#xa;----------------&#xa;" vertex="1">
+          <mxGeometry height="140" width="200" x="550" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="category" parent="1" style="shape=rectangle" value="Category&#xa;----------------&#xa;Name" vertex="1">
+          <mxGeometry height="100" width="180" x="800" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="order" parent="1" style="shape=rectangle" value="Order&#xa;----------------&#xa;Id&#xa;Date&#xa;Status&#xa;Total&#xa;----------------&#xa;Pay()&#xa;Cancel()" vertex="1">
+          <mxGeometry height="160" width="220" x="300" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="orderitem" parent="1" style="shape=rectangle" value="OrderItem&#xa;----------------&#xa;Product&#xa;Quantity&#xa;Price" vertex="1">
+          <mxGeometry height="120" width="200" x="550" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="payment" parent="1" style="shape=rectangle" value="Payment&#xa;----------------&#xa;Id&#xa;Type&#xa;Amount&#xa;Status&#xa;----------------&#xa;Process()&#xa;Refund()" vertex="1">
+          <mxGeometry height="160" width="220" x="100" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="delivery" parent="1" style="shape=rectangle" value="Delivery&#xa;----------------&#xa;Id&#xa;Address&#xa;Status&#xa;----------------&#xa;Ship()&#xa;Complete()" vertex="1">
+          <mxGeometry height="160" width="220" x="400" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="review" parent="1" style="shape=rectangle" value="Review&#xa;----------------&#xa;Rating&#xa;Comment" vertex="1">
+          <mxGeometry height="120" width="200" x="800" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="RmUe5fbgHcTwCZsBi1Cp-1" edge="1" parent="1" source="customer" style="endArrow=block" target="user">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RmUe5fbgHcTwCZsBi1Cp-2" edge="1" parent="1" source="admin" style="endArrow=block" target="user">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RmUe5fbgHcTwCZsBi1Cp-3" edge="1" parent="1" source="customer" style="endArrow=none" target="order">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RmUe5fbgHcTwCZsBi1Cp-4" edge="1" parent="1" source="order" style="endArrow=none" target="orderitem">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RmUe5fbgHcTwCZsBi1Cp-5" edge="1" parent="1" source="orderitem" style="endArrow=none" target="product">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RmUe5fbgHcTwCZsBi1Cp-6" edge="1" parent="1" source="product" style="endArrow=none" target="category">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RmUe5fbgHcTwCZsBi1Cp-7" edge="1" parent="1" source="order" style="endArrow=none" target="payment">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RmUe5fbgHcTwCZsBi1Cp-8" edge="1" parent="1" source="order" style="endArrow=none" target="delivery">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RmUe5fbgHcTwCZsBi1Cp-9" edge="1" parent="1" source="review" style="endArrow=none" target="product">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
