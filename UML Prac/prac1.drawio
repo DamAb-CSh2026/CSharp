@@ -1,0 +1,82 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="UML University" id="0">
+    <mxGraphModel dx="889" dy="741" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="u1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Университет&#xa;----------------&#xa;- название&#xa;- адрес&#xa;+ добавитьФакультет()&#xa;+ удалитьФакультет()" vertex="1">
+          <mxGeometry height="140" width="220" x="40" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="u2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Факультет&#xa;----------------&#xa;- название&#xa;+ добавитьКафедру()&#xa;+ удалитьКафедру()" vertex="1">
+          <mxGeometry height="130" width="220" x="340" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="u3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Кафедра&#xa;----------------&#xa;- название&#xa;+ добавитьПреподавателя()&#xa;+ удалитьПреподавателя()" vertex="1">
+          <mxGeometry height="140" width="240" x="640" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="u4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Пользователь&#xa;----------------&#xa;- id&#xa;- имя&#xa;- email&#xa;+ войти()&#xa;+ выйти()" vertex="1">
+          <mxGeometry height="150" width="220" x="40" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="u5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Студент&#xa;----------------&#xa;- номерЗачетки&#xa;+ зарегистрироватьсяНаКурс()&#xa;+ просмотретьОценки()" vertex="1">
+          <mxGeometry height="150" width="240" x="340" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="u6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Преподаватель&#xa;----------------&#xa;- должность&#xa;+ провестиЗанятие()&#xa;+ выставитьОценку()" vertex="1">
+          <mxGeometry height="150" width="240" x="640" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="u7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Администратор&#xa;----------------&#xa;+ добавитьПользователя()&#xa;+ удалитьПользователя()" vertex="1">
+          <mxGeometry height="130" width="220" x="40" y="505" as="geometry" />
+        </mxCell>
+        <mxCell id="u8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Курс&#xa;----------------&#xa;- название&#xa;+ добавитьСтудента()&#xa;+ удалитьСтудента()" vertex="1">
+          <mxGeometry height="130" width="220" x="340" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="u9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Расписание&#xa;----------------&#xa;- дата&#xa;- время&#xa;- аудитория&#xa;+ изменить()" vertex="1">
+          <mxGeometry height="140" width="220" x="640" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="u10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Экзамен&#xa;----------------&#xa;- дата&#xa;+ назначить()&#xa;+ выставитьОценку()" vertex="1">
+          <mxGeometry height="130" width="220" x="940" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="u11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Оценка&#xa;----------------&#xa;- балл&#xa;- комментарий" vertex="1">
+          <mxGeometry height="110" width="180" x="1220" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="u1" style="endArrow=diamondThin;html=1;" target="u2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="u2" style="endArrow=diamondThin;html=1;" target="u3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="u4" style="endArrow=block;endFill=0;html=1;" target="u5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="u4" style="endArrow=block;endFill=0;html=1;" target="u6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="u4" style="endArrow=block;endFill=0;html=1;" target="u7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="u3" style="endArrow=open;html=1;" target="u6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="u3" style="endArrow=open;html=1;" target="u8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" edge="1" parent="1" source="u5" style="endArrow=open;html=1;" target="u8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" edge="1" parent="1" source="u6" style="endArrow=open;html=1;" target="u8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e10" edge="1" parent="1" source="u8" style="endArrow=open;html=1;" target="u9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e11" edge="1" parent="1" source="u8" style="endArrow=open;html=1;" target="u10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e12" edge="1" parent="1" source="u10" style="endArrow=open;html=1;" target="u11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e13" edge="1" parent="1" source="u5" style="endArrow=open;html=1;" target="u11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
