@@ -1,0 +1,89 @@
+<mxfile>
+  <diagram name="Logistics Component Diagram">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <!-- Frontend -->
+        <mxCell id="frontend" value="Frontend&#xa;(Web + Mobile)&#xa;REST / WebSocket" style="shape=rectangle;rounded=1" vertex="1" parent="1">
+          <mxGeometry x="50" y="100" width="200" height="120" as="geometry"/>
+        </mxCell>
+
+        <!-- Backend -->
+        <mxCell id="backend" value="Backend&#xa;(Business Logic)&#xa;REST API / gRPC" style="shape=rectangle;rounded=1;fillColor=#dae8fc" vertex="1" parent="1">
+          <mxGeometry x="300" y="100" width="220" height="140" as="geometry"/>
+        </mxCell>
+
+        <!-- Database -->
+        <mxCell id="db" value="Database&#xa;SQL" style="shape=cylinder" vertex="1" parent="1">
+          <mxGeometry x="600" y="50" width="160" height="100" as="geometry"/>
+        </mxCell>
+
+        <!-- Warehouse -->
+        <mxCell id="warehouse" value="Warehouse Module&#xa;Inventory API" style="shape=rectangle" vertex="1" parent="1">
+          <mxGeometry x="600" y="200" width="180" height="100" as="geometry"/>
+        </mxCell>
+
+        <!-- Route Optimization -->
+        <mxCell id="route" value="Route Optimization&#xa;Route API" style="shape=rectangle" vertex="1" parent="1">
+          <mxGeometry x="300" y="300" width="220" height="100" as="geometry"/>
+        </mxCell>
+
+        <!-- Courier Integration -->
+        <mxCell id="courier" value="Courier Integration&#xa;REST / Webhooks" style="shape=rectangle" vertex="1" parent="1">
+          <mxGeometry x="600" y="350" width="200" height="120" as="geometry"/>
+        </mxCell>
+
+        <!-- Notification -->
+        <mxCell id="notification" value="Notification Service&#xa;Email / SMS / Push" style="shape=rectangle" vertex="1" parent="1">
+          <mxGeometry x="50" y="300" width="200" height="100" as="geometry"/>
+        </mxCell>
+
+        <!-- Analytics -->
+        <mxCell id="analytics" value="Analytics System&#xa;Reports API" style="shape=rectangle" vertex="1" parent="1">
+          <mxGeometry x="300" y="450" width="220" height="100" as="geometry"/>
+        </mxCell>
+
+        <!-- External -->
+        <mxCell id="external" value="External Systems&#xa;(Courier API, Payments)" style="shape=cloud" vertex="1" parent="1">
+          <mxGeometry x="850" y="350" width="200" height="120" as="geometry"/>
+        </mxCell>
+
+        <!-- Connections -->
+        <mxCell edge="1" source="frontend" target="backend" value="REST API" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell edge="1" source="backend" target="db" value="SQL" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell edge="1" source="backend" target="warehouse" value="Inventory API" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell edge="1" source="backend" target="route" value="Route API" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell edge="1" source="backend" target="notification" value="Triggers" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell edge="1" source="backend" target="courier" value="REST" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell edge="1" source="courier" target="external" value="Webhooks" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell edge="1" source="backend" target="analytics" value="Data" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

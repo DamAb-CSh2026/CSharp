@@ -1,0 +1,98 @@
+<mxfile>
+  <diagram name="Ecommerce UML">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <!-- User -->
+        <mxCell id="user" value="&lt;&lt;abstract&gt;&gt; User&#xa;----------------&#xa;Id&#xa;Name&#xa;Email&#xa;----------------&#xa;Login()&#xa;UpdateData()" style="shape=rectangle" vertex="1" parent="1">
+          <mxGeometry x="100" y="50" width="200" height="140" as="geometry"/>
+        </mxCell>
+
+        <!-- Customer -->
+        <mxCell id="customer" value="Customer&#xa;----------------&#xa;Orders&#xa;LoyaltyPoints&#xa;----------------&#xa;AddPoints()" style="shape=rectangle" vertex="1" parent="1">
+          <mxGeometry x="50" y="220" width="200" height="140" as="geometry"/>
+        </mxCell>
+
+        <!-- Admin -->
+        <mxCell id="admin" value="Admin&#xa;----------------&#xa;----------------&#xa;LogAction()" style="shape=rectangle" vertex="1" parent="1">
+          <mxGeometry x="300" y="220" width="200" height="120" as="geometry"/>
+        </mxCell>
+
+        <!-- Product -->
+        <mxCell id="product" value="Product&#xa;----------------&#xa;Id&#xa;Name&#xa;Price&#xa;Stock&#xa;----------------&#xa;" style="shape=rectangle" vertex="1" parent="1">
+          <mxGeometry x="550" y="50" width="200" height="140" as="geometry"/>
+        </mxCell>
+
+        <!-- Category -->
+        <mxCell id="category" value="Category&#xa;----------------&#xa;Name" style="shape=rectangle" vertex="1" parent="1">
+          <mxGeometry x="800" y="50" width="180" height="100" as="geometry"/>
+        </mxCell>
+
+        <!-- Order -->
+        <mxCell id="order" value="Order&#xa;----------------&#xa;Id&#xa;Date&#xa;Status&#xa;Total&#xa;----------------&#xa;Pay()&#xa;Cancel()" style="shape=rectangle" vertex="1" parent="1">
+          <mxGeometry x="300" y="400" width="220" height="160" as="geometry"/>
+        </mxCell>
+
+        <!-- OrderItem -->
+        <mxCell id="orderitem" value="OrderItem&#xa;----------------&#xa;Product&#xa;Quantity&#xa;Price" style="shape=rectangle" vertex="1" parent="1">
+          <mxGeometry x="550" y="350" width="200" height="120" as="geometry"/>
+        </mxCell>
+
+        <!-- Payment -->
+        <mxCell id="payment" value="Payment&#xa;----------------&#xa;Id&#xa;Type&#xa;Amount&#xa;Status&#xa;----------------&#xa;Process()&#xa;Refund()" style="shape=rectangle" vertex="1" parent="1">
+          <mxGeometry x="100" y="600" width="220" height="160" as="geometry"/>
+        </mxCell>
+
+        <!-- Delivery -->
+        <mxCell id="delivery" value="Delivery&#xa;----------------&#xa;Id&#xa;Address&#xa;Status&#xa;----------------&#xa;Ship()&#xa;Complete()" style="shape=rectangle" vertex="1" parent="1">
+          <mxGeometry x="400" y="600" width="220" height="160" as="geometry"/>
+        </mxCell>
+
+        <!-- Review -->
+        <mxCell id="review" value="Review&#xa;----------------&#xa;Rating&#xa;Comment" style="shape=rectangle" vertex="1" parent="1">
+          <mxGeometry x="800" y="300" width="200" height="120" as="geometry"/>
+        </mxCell>
+
+        <!-- Relations -->
+        <mxCell edge="1" source="customer" target="user" style="endArrow=block" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell edge="1" source="admin" target="user" style="endArrow=block" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell edge="1" source="customer" target="order" style="endArrow=none" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell edge="1" source="order" target="orderitem" style="endArrow=none" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell edge="1" source="orderitem" target="product" style="endArrow=none" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell edge="1" source="product" target="category" style="endArrow=none" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell edge="1" source="order" target="payment" style="endArrow=none" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell edge="1" source="order" target="delivery" style="endArrow=none" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell edge="1" source="review" target="product" style="endArrow=none" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
