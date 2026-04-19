@@ -1,0 +1,73 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Online Banking Components" id="0">
+    <mxGraphModel dx="1373" dy="751" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="c1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Веб-приложение&#xa;Frontend&#xa;Интерфейс: REST API" vertex="1">
+          <mxGeometry height="90" width="180" x="40" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="c2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Мобильное приложение&#xa;Frontend&#xa;Интерфейс: REST API" vertex="1">
+          <mxGeometry height="90" width="180" x="40" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="c3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Backend Server&#xa;Обработка запросов&#xa;REST / GraphQL" vertex="1">
+          <mxGeometry height="110" width="220" x="320" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="c4" parent="1" style="shape=cylinder;whiteSpace=wrap;html=1;" value="База данных&#xa;Клиенты, счета, транзакции&#xa;SQL" vertex="1">
+          <mxGeometry height="110" width="170" x="650" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="c5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Auth Service&#xa;Авторизация&#xa;2FA / Token" vertex="1">
+          <mxGeometry height="90" width="170" x="650" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="c6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Payment Gateway&#xa;Переводы и оплаты&#xa;External API" vertex="1">
+          <mxGeometry height="100" width="190" x="920" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="c7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Notification Service&#xa;SMS / Email" vertex="1">
+          <mxGeometry height="90" width="190" x="920" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="c8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Analytics Module&#xa;Отчеты и статистика" vertex="1">
+          <mxGeometry height="90" width="190" x="650" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="c9" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Monitoring System&#xa;Состояние системы" vertex="1">
+          <mxGeometry height="90" width="190" x="920" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="c10" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Внешние банки / Провайдеры услуг" vertex="1">
+          <mxGeometry height="90" width="220" x="1180" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="c1" style="endArrow=open;html=1;" target="c3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="c2" style="endArrow=open;html=1;" target="c3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="c3" style="endArrow=open;html=1;" target="c4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="c3" style="endArrow=open;html=1;" target="c5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="c3" style="endArrow=open;html=1;" target="c6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="c3" style="endArrow=open;html=1;" target="c7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="c4" style="endArrow=open;html=1;" target="c8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" edge="1" parent="1" source="c6" style="endArrow=open;html=1;" target="c10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" edge="1" parent="1" source="c9" style="endArrow=open;html=1;" target="c3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e10" edge="1" parent="1" source="c9" style="endArrow=open;html=1;" target="c4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e11" edge="1" parent="1" source="c9" style="endArrow=open;html=1;" target="c5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
