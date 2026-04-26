@@ -1,0 +1,14 @@
+C:\Users\Damir\source\repos\T12\T12\bin\Debug\net8.0\T12.exe
+C:\Users\Damir\source\repos\T12\T12\bin\Debug\net8.0\T12.deps.json
+C:\Users\Damir\source\repos\T12\T12\bin\Debug\net8.0\T12.runtimeconfig.json
+C:\Users\Damir\source\repos\T12\T12\bin\Debug\net8.0\T12.dll
+C:\Users\Damir\source\repos\T12\T12\bin\Debug\net8.0\T12.pdb
+C:\Users\Damir\source\repos\T12\T12\obj\Debug\net8.0\T12.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Damir\source\repos\T12\T12\obj\Debug\net8.0\T12.AssemblyInfoInputs.cache
+C:\Users\Damir\source\repos\T12\T12\obj\Debug\net8.0\T12.AssemblyInfo.cs
+C:\Users\Damir\source\repos\T12\T12\obj\Debug\net8.0\T12.csproj.CoreCompileInputs.cache
+C:\Users\Damir\source\repos\T12\T12\obj\Debug\net8.0\T12.dll
+C:\Users\Damir\source\repos\T12\T12\obj\Debug\net8.0\refint\T12.dll
+C:\Users\Damir\source\repos\T12\T12\obj\Debug\net8.0\T12.pdb
+C:\Users\Damir\source\repos\T12\T12\obj\Debug\net8.0\T12.genruntimeconfig.cache
+C:\Users\Damir\source\repos\T12\T12\obj\Debug\net8.0\ref\T12.dll
