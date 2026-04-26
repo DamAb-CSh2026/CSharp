@@ -1,0 +1,130 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Диаграмма последовательности - Исправленная" id="0">
+    <mxGraphModel dx="2060" dy="1126" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="p1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Клиент" vertex="1">
+          <mxGeometry height="50" width="130" x="40" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="p2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Система" vertex="1">
+          <mxGeometry height="50" width="130" x="320" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="p3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Платежный шлюз" vertex="1">
+          <mxGeometry height="50" width="170" x="620" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="p4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Администратор площадки" vertex="1">
+          <mxGeometry height="50" width="190" x="940" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="p5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Подрядчики" vertex="1">
+          <mxGeometry height="50" width="150" x="1280" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="p6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Менеджер" vertex="1">
+          <mxGeometry height="50" width="130" x="1580" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="l1" parent="1" style="shape=line;dashed=1;" value="" vertex="1">
+          <mxGeometry height="1050" width="1" x="105" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="l2" parent="1" style="shape=line;dashed=1;" value="" vertex="1">
+          <mxGeometry height="1050" width="1" x="385" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="l3" parent="1" style="shape=line;dashed=1;" value="" vertex="1">
+          <mxGeometry height="1050" width="1" x="705" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="l4" parent="1" style="shape=line;dashed=1;" value="" vertex="1">
+          <mxGeometry height="1050" width="1" x="1035" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="l5" parent="1" style="shape=line;dashed=1;" value="" vertex="1">
+          <mxGeometry height="1050" width="1" x="1355" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="l6" parent="1" style="shape=line;dashed=1;" value="" vertex="1">
+          <mxGeometry height="1050" width="1" x="1645" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" style="endArrow=block;" value="1. Запрос доступности площадки">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="105" y="130" as="sourcePoint" />
+            <mxPoint x="385" y="130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" style="endArrow=open;" value="2. Проверка свободных дат">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="385" y="190" as="sourcePoint" />
+            <mxPoint x="385" y="190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" style="endArrow=block;" value="3. Стоимость и условия">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="385" y="250" as="sourcePoint" />
+            <mxPoint x="105" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" style="endArrow=block;" value="4. Подтвердить бронирование">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="105" y="320" as="sourcePoint" />
+            <mxPoint x="385" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" style="endArrow=block;" value="5. Запрос предоплаты">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="385" y="390" as="sourcePoint" />
+            <mxPoint x="705" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" style="endArrow=block;" value="6. Оплата успешна / отказ">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="705" y="460" as="sourcePoint" />
+            <mxPoint x="385" y="460" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" style="endArrow=block;" value="7. Подтверждение клиенту">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="385" y="530" as="sourcePoint" />
+            <mxPoint x="105" y="530" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e8" edge="1" parent="1" style="endArrow=block;" value="8. Уведомление администратору">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="385" y="600" as="sourcePoint" />
+            <mxPoint x="1035" y="600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e9" edge="1" parent="1" style="endArrow=block;" value="9. Назначение задач">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1035" y="680" as="sourcePoint" />
+            <mxPoint x="1355" y="680" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e10" edge="1" parent="1" style="endArrow=block;" value="10. Подтверждение выполнения">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1355" y="760" as="sourcePoint" />
+            <mxPoint x="385" y="760" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e11" edge="1" parent="1" style="endArrow=block;" value="11. Отчет администратору">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="385" y="840" as="sourcePoint" />
+            <mxPoint x="1035" y="840" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e12" edge="1" parent="1" style="endArrow=block;" value="12. Оцените сервис">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="385" y="920" as="sourcePoint" />
+            <mxPoint x="105" y="920" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e13" edge="1" parent="1" style="endArrow=block;" value="13. Отзыв клиента">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="105" y="1000" as="sourcePoint" />
+            <mxPoint x="385" y="1000" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e14" edge="1" parent="1" style="endArrow=block;" value="14. Итоговый отчет менеджеру">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="385" y="1080" as="sourcePoint" />
+            <mxPoint x="1645" y="1080" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
