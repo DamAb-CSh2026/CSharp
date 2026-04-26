@@ -1,0 +1,148 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Hiring Activity Diagram" id="0">
+    <mxGraphModel dx="4120" dy="2252" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="s1" parent="1" style="ellipse;html=1;aspect=fixed;fillColor=#000000;fontColor=#ffffff;" value="" vertex="1">
+          <mxGeometry height="30" width="30" x="60" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="a1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Руководитель создает заявку на вакансию" vertex="1">
+          <mxGeometry height="60" width="240" x="130" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="a2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="HR проверяет заявку" vertex="1">
+          <mxGeometry height="60" width="180" x="430" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="d1" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="Соответствует требованиям?" vertex="1">
+          <mxGeometry height="70" width="160" x="670" y="25" as="geometry" />
+        </mxCell>
+        <mxCell id="a3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Уведомить руководителя о доработке" vertex="1">
+          <mxGeometry height="60" width="240" x="900" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="a4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Утвердить заявку" vertex="1">
+          <mxGeometry height="60" width="180" x="900" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="f1" parent="1" style="shape=line;strokeWidth=4;" value="" vertex="1">
+          <mxGeometry height="100" width="10" x="1140" y="115" as="geometry" />
+        </mxCell>
+        <mxCell id="a5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Публикация вакансии на сайте" vertex="1">
+          <mxGeometry height="60" width="220" x="1190" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="a6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Кандидаты подают заявки" vertex="1">
+          <mxGeometry height="60" width="220" x="1190" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="f2" parent="1" style="shape=line;strokeWidth=4;" value="" vertex="1">
+          <mxGeometry height="140" width="10" x="1450" y="115" as="geometry" />
+        </mxCell>
+        <mxCell id="a7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="HR проверяет анкеты кандидатов" vertex="1">
+          <mxGeometry height="60" width="230" x="1500" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="d2" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="Кандидат подходит?" vertex="1">
+          <mxGeometry height="70" width="150" x="1780" y="125" as="geometry" />
+        </mxCell>
+        <mxCell id="a8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Отклонить анкету" vertex="1">
+          <mxGeometry height="60" width="180" x="1980" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="a9" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Пригласить на собеседование" vertex="1">
+          <mxGeometry height="60" width="220" x="1980" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="a10" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="HR интервью" vertex="1">
+          <mxGeometry height="60" width="160" x="2260" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="a11" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Техническое интервью руководителя" vertex="1">
+          <mxGeometry height="60" width="240" x="2470" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="d3" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="Оба этапа успешны?" vertex="1">
+          <mxGeometry height="70" width="160" x="2760" y="145" as="geometry" />
+        </mxCell>
+        <mxCell id="a12" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Отправить отказ кандидату" vertex="1">
+          <mxGeometry height="60" width="220" x="2980" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="a13" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Предложить оффер" vertex="1">
+          <mxGeometry height="60" width="180" x="2980" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="a14" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Кандидат подтверждает оффер" vertex="1">
+          <mxGeometry height="60" width="230" x="3220" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="a15" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Добавить сотрудника в БД" vertex="1">
+          <mxGeometry height="60" width="210" x="3500" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="a16" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Уведомить IT-отдел о рабочем месте" vertex="1">
+          <mxGeometry height="60" width="250" x="3760" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="end1" parent="1" style="ellipse;html=1;aspect=fixed;fillColor=#000000;fontColor=#ffffff;" value="" vertex="1">
+          <mxGeometry height="30" width="30" x="4060" y="215" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="s1" target="a1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="a1" target="a2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="a2" target="d1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="d1" target="a3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="d1" target="a4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="a4" target="f1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="f1" target="a5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" edge="1" parent="1" source="f1" target="a6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" edge="1" parent="1" source="a5" target="f2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e10" edge="1" parent="1" source="a6" target="f2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e11" edge="1" parent="1" source="f2" target="a7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e12" edge="1" parent="1" source="a7" target="d2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e13" edge="1" parent="1" source="d2" target="a8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e14" edge="1" parent="1" source="d2" target="a9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e15" edge="1" parent="1" source="a9" target="a10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e16" edge="1" parent="1" source="a10" target="a11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e17" edge="1" parent="1" source="a11" target="d3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e18" edge="1" parent="1" source="d3" target="a12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e19" edge="1" parent="1" source="d3" target="a13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e20" edge="1" parent="1" source="a13" target="a14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e21" edge="1" parent="1" source="a14" target="a15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e22" edge="1" parent="1" source="a15" target="a16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e23" edge="1" parent="1" source="a16" target="end1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
